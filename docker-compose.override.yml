@@ -5,14 +5,14 @@ version: '3.5'
 
   nginx:
     build:
-    args:
-     - WEB_SSL=true
-    ports:
-     - "87:80"
-     - "943:443"
-    volumes:
-     - ./certs/:/var/certs        
+      args:
+       - WEB_SSL=true
+      ports:
+       - "87:80"
+       - "943:443"
+      volumes:
+       - ./certs/:/var/certs        
   node:
-   build:
-    args:
-      PROJECT_PATH: mirth-connect	    
+    build:
+      args:
+        PROJECT_PATH: mirth-connect	    
