@@ -6,3 +6,5 @@ nginx:
         ports:
             - "87:80"
             - "943:443"
+        volumes:
+            - ./certs/:/var/certs        
