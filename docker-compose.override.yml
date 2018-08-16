@@ -3,3 +3,6 @@ nginx:
         build:
             args:
                 - WEB_SSL=true
+        ports:
+            - "87:80"
+            - "943:443"
